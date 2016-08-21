@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8220E7C41D68E131007120EF /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8220E7C31D68E131007120EF /* NextButton.swift */; };
 		82CCB2FE1D66A12A00DFA32F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCB2FD1D66A12A00DFA32F /* AppDelegate.swift */; };
-		82CCB3001D66A12A00DFA32F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCB2FF1D66A12A00DFA32F /* ViewController.swift */; };
+		82CCB3001D66A12A00DFA32F /* DOBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCB2FF1D66A12A00DFA32F /* DOBViewController.swift */; };
 		82CCB3031D66A12A00DFA32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CCB3011D66A12A00DFA32F /* Main.storyboard */; };
 		82CCB3051D66A12A00DFA32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CCB3041D66A12A00DFA32F /* Assets.xcassets */; };
 		82CCB3081D66A12A00DFA32F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CCB3061D66A12A00DFA32F /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8220E7C31D68E131007120EF /* NextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		82CCB2FA1D66A12A00DFA32F /* DatePickerCustomization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePickerCustomization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CCB2FD1D66A12A00DFA32F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82CCB2FF1D66A12A00DFA32F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82CCB2FF1D66A12A00DFA32F /* DOBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBViewController.swift; sourceTree = "<group>"; };
 		82CCB3021D66A12A00DFA32F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82CCB3041D66A12A00DFA32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82CCB3071D66A12A00DFA32F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				82CCB2FD1D66A12A00DFA32F /* AppDelegate.swift */,
-				82CCB2FF1D66A12A00DFA32F /* ViewController.swift */,
+				82CCB2FF1D66A12A00DFA32F /* DOBViewController.swift */,
+				8220E7C31D68E131007120EF /* NextButton.swift */,
 				82CCB3011D66A12A00DFA32F /* Main.storyboard */,
 				82CCB3041D66A12A00DFA32F /* Assets.xcassets */,
 				82CCB3061D66A12A00DFA32F /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					82CCB2F91D66A12A00DFA32F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 24Q7YD9VLQ;
 					};
 					82CCB30D1D66A12A00DFA32F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82CCB3001D66A12A00DFA32F /* ViewController.swift in Sources */,
+				8220E7C41D68E131007120EF /* NextButton.swift in Sources */,
+				82CCB3001D66A12A00DFA32F /* DOBViewController.swift in Sources */,
 				82CCB2FE1D66A12A00DFA32F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,9 +406,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DatePickerCustomization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DatePickerCustomization;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinekay.DatePickerCustomization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,9 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DatePickerCustomization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DatePickerCustomization;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinekay.DatePickerCustomization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +491,7 @@
 				82CCB3241D66A12A00DFA32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82CCB3251D66A12A00DFA32F /* Build configuration list for PBXNativeTarget "DatePickerCustomizationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +500,7 @@
 				82CCB3271D66A12A00DFA32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82CCB3281D66A12A00DFA32F /* Build configuration list for PBXNativeTarget "DatePickerCustomizationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				82CCB32A1D66A12A00DFA32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
